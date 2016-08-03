@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="applicatiom.banyan1.job">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="applicatiom.banyan1.job.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="applicatiom.banyan1.job.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Network State Permissions to detect Internet status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <!-- call permission -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/MyMaterialTheme">
+
+
+        <!-- SplashActivity -->
+        <activity
+            android:name=".Activity_Splash"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Registration -->
+        <activity
+            android:name=".Activity_Registration"
+            android:label="Registration" />
+        <!-- MainActivity -->
+        <activity android:name=".MainActivity" />
+        <!-- Activity_login -->
+        <activity
+            android:name=".Activity_login"
+            android:label="Login" />
+        <!-- Activity_JobOpp_Grid -->
+        <activity
+            android:name=".Activity_JobOpp_Grid"
+            android:label="Job Opportunities" />
+        <!-- Activity_Joblist> -->
+        <activity
+            android:name=".Activity_Joblist"
+            android:label="@string/title_activity_activity__joblist" />
+        <!-- Activity_CreateResume -->
+        <activity
+            android:name=".Activity_CreateResume"
+            android:label="Create Resume" />
+        <activity
+            android:name=".Activity_Select_Place"
+            android:label="@string/title_activity_select__place"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".Activity_Postjob"
+            android:label="@string/title_activity_activity__postjob"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".Activity_Q_and_Ans"
+            android:label="Ask the Experts"
+            android:windowSoftInputMode="stateHidden"
+
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".Activity_Ans"
+            android:label="List of Answer"
+            android:windowSoftInputMode="stateHidden"
+
+            android:theme="@style/MyMaterialTheme" />
+
+        <activity
+            android:name=".Activity_NewDescp"
+            android:label="News Details"
+            android:theme="@style/MyMaterialTheme"></activity>
+        <activity
+            android:name=".Activity_NewList"
+            android:label="Latest News"
+            android:theme="@style/MyMaterialTheme"></activity>
+        <activity
+            android:name=".Activity_training"
+            android:label="Training List"
+            android:theme="@style/MyMaterialTheme"></activity>
+        <activity
+            android:name=".Activity_TrainingDes"
+            android:label="Training Details"
+            android:theme="@style/MyMaterialTheme"></activity>
+        <activity
+            android:name=".Activity_ViewAppliedPosted"
+            android:label="Applied Jobs"
+            android:theme="@style/MyMaterialTheme"></activity>
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="applicatiom.banyan1.job" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GCMIntentService" />
+
+
+    </application>
+
+</manifest>

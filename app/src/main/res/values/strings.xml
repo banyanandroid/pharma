@@ -1,0 +1,177 @@
+<resources>
+    <string name="app_name">Pharma Jobs-India</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_hotjobs">Hot jobs</string>
+    <string name="nav_item_latestnew">Pharma news</string>
+    <string name="nav_item_training">Training</string>
+    <string name="nav_item_alrdyapplied">View applied jobs</string>
+    <string name="nav_item_login">Log out</string>
+    <string name="nav_item_invite">Invite</string>
+    <string name="nav_item_post">Post job</string>
+
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_hotjobs</item>
+        <item>@string/nav_item_latestnew</item>
+        <item>@string/nav_item_training</item>
+        <item>@string/nav_item_alrdyapplied</item>
+        <item>@string/nav_item_login</item>
+        <item>@string/nav_item_invite</item>
+        <item>@string/nav_item_post</item>
+    </string-array>
+
+
+    <string name="title">Home</string>
+    <string name="title_hotjobs">Hot jobs</string>
+    <string name="title_latestnew">Pharma news</string>
+    <string name="title_training">Training</string>
+    <string name="title_alrdyapplied">View applied jobs</string>
+    <string name="title_logout">Log out</string>
+
+    <string name="title_activity_emg_list_item">emg_list_item</string>
+    <string name="click_reg"><u>Click here for login before apply</u></string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_registration">Registration</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_otp__verify">OTP_Verify</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_user_rating">User_rating</string>
+    <string name="title_activity_row_emg">row_emg</string>
+    <string name="title_activity_request_service">RequestService</string>
+    <string name="title_activity_request">Request</string>
+    <string name="title_activity_req">Req</string>
+    <string name="title_activity_cp_registration">Cp_registration</string>
+    <string name="title_activity_ripple_effect">ripple_effect</string>
+    <string name="title_activity_ripple">ripple</string>
+    <string name="title_activity_frgment_homes">frgment_homes</string>
+    <string name="title_activity_image__upload">Image_Upload</string>
+    <string name="title_activity_cp_registrator">cp_registrator</string>
+    <string name="title_activity_profile_frag1">Profile_frag1</string>
+    <string name="title_activity_profile_frag2">Profile_frag2</string>
+
+
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="title_activity_fragment_logout">Fragment_logout</string>
+    <string name="title_activity_activity__job_opp__grid">Activity_JobOpp_Grid</string>
+    <string name="title_activity_activity__joblist">Activity_Joblist</string>
+
+
+    <string name="num">23</string>
+    <string name="text">similar colors in your image are combined. This technique is called “quantization”. </string>
+    <string name="company">Bal-pharma</string>
+    <string name="jobs">Wanted for Sales executive/MR</string>
+    <string name="date">16.12.2015</string>
+    <string name="skils">Skils</string>
+    <string name="lang">BioMedical</string>
+    <string name="years">0 to 3 yrs</string>
+    <string name="Expr">Experience</string>
+    <string name="locat">Location</string>
+    <string name="postedon">Posted On</string>
+    <string name="salary">Salary</string>
+    <string name="func_area">Functional Area</string>
+    <string name="industry">Industry</string>
+    <string name="location">Location</string>
+    <string name="desc">Description</string>
+    <string name="description">Job for Sales Excutive</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="emp_detail">Employer Detail</string>
+    <string name="cmpy_name">Company Name</string>
+    <string name="reach_us">Reach Us</string>
+    <string name="addr">Address</string>
+    <string name="title_activity_jobtitle">Jobtitle</string>
+    <string name="title_activity_create_resume">CreateResume</string>
+    <string name="create_res"><u><b><i>Do you want to create your resume?</i></b></u></string>
+    <string name="ph_list_des"><u>Phone</u></string>
+
+
+    <!--expyrs-->
+    <string-array name="spinner_item_expyrs">
+        <item>Select Experience </item>
+        <item>0.6+</item>
+        <item>1+ </item>
+        <item>2+</item>
+        <item>3+</item>
+        <item>4+</item>
+        <item>5+</item>
+        <item>6+</item>
+        <item>7+</item>
+        <item>8+</item>
+        <item>9+</item>
+        <item>10 above</item>
+    </string-array>
+
+
+    <!--salary-->
+    <string-array name="spinner_item_salary">
+        <item>Select CTC </item>
+        <item>50,000-1,00,000</item>
+        <item>2,00,000-3,00,000</item>
+        <item>4,00,000-5,00,000</item>
+        <item>5,00,000 above</item>
+    </string-array>
+
+
+    <!--speciality-->
+    <string-array name="spinner_item_spcl">
+        <item>Select Speciality</item>
+        <item>General</item>
+        <item>Biotech</item>
+        <item>Cardiac/Cardio-diabetic</item>
+        <item>Critical care</item>
+        <item>Dermatology/Cosmeceutical</item>
+        <item>Critical care</item>
+        <item>Diabeto</item>
+        <item>Gastro</item>
+        <item>Neuro-Psychiatry</item>
+        <item>Nutraceuticals/Nutrition</item>
+        <item> OTC</item>
+        <item>Rural</item>
+        <item> Urology/Uro-Nephro</item>
+        <item>Others</item>
+
+
+    </string-array>
+    <string name="title_activity_select__place">Select_Place</string>
+    <string name="title_activity_job_opp__grid">job_opp__grid</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_activity_login_apply">Activity_login_apply</string>
+    <string name="title_activity_activity__postjob">Activity_Postjob</string>
+    <string name="title_activity_activity__news1">Activity_News1</string>
+    <string name="speech_prompt">Say something&#8230;</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+
+
+</resources>
+
+
+
+
+
+
+
+
+
+

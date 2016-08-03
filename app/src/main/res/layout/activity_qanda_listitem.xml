@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey"
+    android:orientation="horizontal">
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_quest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/thumbnail"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:text="wat s ur namellllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll?"
+            android:textColor="@color/navy"
+            android:textSize="15dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+
+            >
+
+            <TextView
+                android:id="@+id/txt_posted"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.90"
+                android:text="Posted by "
+
+                android:textColor="@color/colorPrimary"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_postedd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text=" :"
+
+                android:textColor="@color/colorPrimary"
+
+                />
+
+            <TextView
+                android:id="@+id/edt_name_poted_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.70"
+
+                android:text="eswari"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/txt_ask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asked:"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:45"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+
+            >
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.80"
+                android:text="Date "
+                android:textColor="@color/colorPrimary"
+
+                />
+
+
+            <TextView
+                android:id="@+id/txt_posteddd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.20"
+                android:text=" :"
+
+                android:textColor="@color/colorPrimary"
+
+                />
+
+
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.80"
+                android:text="45:34"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/txt_ans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/navy"
+                android:padding="5dp"
+
+                android:text="Answer:"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/navy"
+                android:padding="5dp"
+                android:text="01"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
